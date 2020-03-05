@@ -1,8 +1,7 @@
 const dbConfig = require("../config/db.json");
 console.log(dbConfig);
-const mysql = require("mysql2");
 
-const knex = require("knex")({
+module.exports = require("knex")({
 	client: "mysql2",
 	connection: {
 		host: dbConfig.DB_ADDRESS,
@@ -12,9 +11,3 @@ const knex = require("knex")({
 		database: dbConfig.DB_DATABASE_NAME
 	}
 });
-
-const data = knex("Characters")
-	.select("*")
-	.then(rows => console.log(rows));
-
-module.exports = data;

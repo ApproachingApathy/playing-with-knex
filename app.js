@@ -24,10 +24,10 @@ global.logger = winston.createLogger({
 	]
 });
 
-require("./db/index");
+app.use(require("./router"));
 
 const server = app.listen(appConfig.PORT, appConfig.SERVER_ADDRESS, () => {
 	const host = server.address().address;
 	const port = server.address().port;
-	logger.info(`Server started at http://${host}:${port}`);
+	logger.info(`Server started at http://${host}:${port}/`);
 });
