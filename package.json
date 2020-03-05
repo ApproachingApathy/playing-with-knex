@@ -6,5 +6,10 @@
   "repository": "https://github.com/ApproachingApathy/playing-with-knex",
   "author": "Ephriam Henderson",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.10",
+    "mysql2": "^2.1.0"
+  }
 }
