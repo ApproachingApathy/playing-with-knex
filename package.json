@@ -1,0 +1,10 @@
+{
+  "name": "play-with-knex",
+  "version": "1.0.0",
+  "description": "Playing around with KnexJs",
+  "main": "index.js",
+  "repository": "https://github.com/ApproachingApathy/playing-with-knex",
+  "author": "Ephriam Henderson",
+  "license": "MIT",
+  "private": true
+}
