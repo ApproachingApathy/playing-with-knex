@@ -24,6 +24,8 @@ global.logger = winston.createLogger({
 	]
 });
 
+require("./db/index");
+
 const server = app.listen(appConfig.PORT, appConfig.SERVER_ADDRESS, () => {
 	const host = server.address().address;
 	const port = server.address().port;
