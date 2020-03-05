@@ -3,7 +3,7 @@ const app = express();
 
 const winston = require("winston");
 
-global.appConfig = require("./config.json");
+global.appConfig = require("./config/config.json");
 global.logger = winston.createLogger({
 	level: appConfig.LOGGER_LEVEL,
 	transports: [
