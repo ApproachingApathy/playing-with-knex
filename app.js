@@ -12,12 +12,12 @@ global.logger = winston.createLogger({
 			format: winston.format.cli()
 		}),
 		new winston.transports.File({
-			filename: "info.log",
+			filename: "logs/info.log",
 			level: "info",
 			format: winston.format.json()
 		}),
 		new winston.transports.File({
-			filename: "error.log",
+			filename: "logs/error.log",
 			level: "error",
 			format: winston.format.json()
 		})
@@ -26,7 +26,6 @@ global.logger = winston.createLogger({
 
 const server = app.listen(appConfig.PORT, appConfig.SERVER_ADDRESS, () => {
 	const host = server.address().address;
-	logger.debug(host);
 	const port = server.address().port;
 	logger.info(`Server started at http://${host}:${port}`);
 });
