@@ -1,15 +1,16 @@
 {
-  "name": "play-with-knex",
-  "version": "1.0.0",
-  "description": "Playing around with KnexJs",
-  "main": "index.js",
-  "repository": "https://github.com/ApproachingApathy/playing-with-knex",
-  "author": "Ephriam Henderson",
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "express": "^4.17.1",
-    "knex": "^0.20.10",
-    "mysql2": "^2.1.0"
-  }
+	"name": "play-with-knex",
+	"version": "1.0.0",
+	"description": "Playing around with KnexJs",
+	"main": "app.js",
+	"repository": "https://github.com/ApproachingApathy/playing-with-knex",
+	"author": "Ephriam Henderson",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"express": "^4.17.1",
+		"knex": "^0.20.10",
+		"mysql2": "^2.1.0",
+		"winston": "^3.2.1"
+	}
 }
