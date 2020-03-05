@@ -1,5 +1,4 @@
 const dbConfig = require("../config/db.json");
-console.log(dbConfig);
 
 module.exports = require("knex")({
 	client: "mysql2",

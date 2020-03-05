@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+const bodyParser = require("body-parser");
+
 const winston = require("winston");
 
 global.appConfig = require("./config/config.json");
@@ -25,6 +27,8 @@ global.logger = winston.createLogger({
 });
 
 app.use(require("./router"));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 const server = app.listen(appConfig.PORT, appConfig.SERVER_ADDRESS, () => {
 	const host = server.address().address;

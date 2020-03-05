@@ -1,0 +1,10 @@
+{
+	"general": {},
+	"database": {
+		"DB_ADDRESS": "127.0.0.1",
+		"DB_PORT": 3306,
+		"DB_USER": "knex",
+		"DB_PASSWORD": "password",
+		"DB_DATABASE_NAME": "dnd-character-db"
+	}
+}
