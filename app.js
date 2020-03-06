@@ -26,9 +26,10 @@ global.logger = winston.createLogger({
 	]
 });
 
-app.use(require("./router"));
+app.use(bodyParser());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(require("./router"));
 
 const server = app.listen(appConfig.PORT, appConfig.SERVER_ADDRESS, () => {
 	const host = server.address().address;
